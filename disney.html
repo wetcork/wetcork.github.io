@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+        <title>Disney+ Images Scraper</title>
+        <link rel="icon" type="image/x-icon" href="https://static-assets.bamgrid.com/product/disneyplus/favicons/favicon.85e279041d79e51b147c1b6feb4f981e.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.1/dist/darkly/bootstrap.min.css">
+        <script type="text/javascript" src="scripts/disney.js"></script>
+	</head>
+	<body>
+        <div id="content" style="padding-top: 2%; padding-left: 5%; padding-right: 5%;">
+            <h2>Disney+ Images Scraper</h2>
+            <a href="https://github.com/wetcork"><h6>by WetCork</h6></a>
+            <label class="form-label mt-4">Enter Disney+ URL:</label>
+            <div class="input-group mb-3">
+                <input id="disney-url" type="text" class="form-control" placeholder="https://www.disneyplus.com...">
+                <input id="disney-region" type="text" class="input-group-text" placeholder="Region">
+                <input id="disney-language" type="text" class="input-group-text" placeholder="Language">
+                <button class="btn btn-primary" type="button" id="button-addon2" onclick="main()">Load</button>
+            </div>
+            <div id="images-row" class="images-container" style="display: flex; flex-wrap: wrap; flex-direction: row; align-items: flex-start; gap: 10px;">
+            </div>
+        </div>
+	</body>
+</html>
